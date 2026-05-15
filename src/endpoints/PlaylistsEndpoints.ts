@@ -90,7 +90,7 @@ export default class PlaylistsEndpoints extends EndpointsBase {
 }
 
 interface RemovePlaylistItemsRequest {
-    tracks: Array<{ uri: string }>;
+    items: Array<{ uri: string }>;
     snapshot_id?: string;
 }
 
