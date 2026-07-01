@@ -58,7 +58,7 @@ export default class PlayerEndpoints extends EndpointsBase {
         await this.putRequest(`me/player/pause${params}`);
     }
 
-    public async skipToNext(device_id: string) {
+    public async skipToNext(device_id?: string) {
         const params = this.paramsFor({ device_id });
         await this.postRequest(`me/player/next${params}`);
     }
